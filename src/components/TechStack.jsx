@@ -1,7 +1,6 @@
 import React from "react";
 
-const TechStack = () => {
+export const TechStack = () => {
   return <div>TechStack</div>;
 };
 
-export default TechStack;
