@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply pb-12 text-white bg-body font-poppins;
+}
