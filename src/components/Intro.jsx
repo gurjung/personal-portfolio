@@ -4,7 +4,7 @@ import { ViewIcon } from '../icons'
 export const Intro = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-center max-w-xl mt-0 lg:ml-20 md:justify-start md:my-36">
+      <div className="flex flex-wrap justify-center max-w-xl mt-0 lg:ml-20 md:justify-start md:my-20">
         <h1 className="text-5xl font-bold text-center md:text-6xl lg:text-7xl md:text-left">
           Building
           <br /> beautiful web experiences
