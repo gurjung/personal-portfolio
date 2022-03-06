@@ -1,23 +1,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
+import { Project } from "./Project";
+import { PROJECTS_DATA } from "../utils/projects.data";
 
 export const ProjectList = () => {
   return (
     <>
-      <div class="container mt-20 md:mt-48 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-        <section class="w-full">
-          <h2 id="work" class="secondary-title">
+      <div className="container flex items-center justify-between w-full px-8 mx-auto mt-20 md:mt-48 md:px-14 lg:px-24">
+        <section className="w-full">
+          <h2 id="work" className="secondary-title">
             My work
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            <img
-              src="images/notes-app.png"
-              class="w-full bg-nav h-36 lg:h-72 object-cover"
-            />
-            <img
-              src="images/covid19-tracker.png"
-              class="w-full bg-nav h-36 lg:h-72 object-cover"
-            />
+          <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+            {PROJECTS_DATA.map((item) => (
+              <Project title={item.title} img={item.img} />
+            ))}
           </div>
         </section>
       </div>
