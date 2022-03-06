@@ -6,17 +6,15 @@ import { PROJECTS_DATA } from "../utils";
 export const ProjectList = () => {
   return (
     <>
-      <div className="container flex items-center justify-between w-full px-8 mx-auto mt-20 shadow-2xl md:mt-48 md:px-14 lg:px-24">
-        <section className="w-full">
-          <h2 id="work" className="secondary-title">
+      <div className="container flex flex-col flex-wrap items-center w-full px-4 py-10 mx-auto border-2 border-white border-solid rounded-lg shadow-2xl h-128 md:mt-10 md:px-14">
+          <h2 id="work" className="text-center secondary-title">
             My Recent work
           </h2>
-          <div className="grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 mt-6 lg:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {PROJECTS_DATA.map((item) => (
               <Project title={item.title} img={item.img} />
             ))}
           </div>
-        </section>
       </div>
     </>
   );
