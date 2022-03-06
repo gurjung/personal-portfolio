@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./layout"
-import { Intro, TechStack, Projects, HireMe } from "./components";
+import { Intro, TechStack, ProjectList, HireMe } from "./components";
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
       {/* Tech Stack */}
       <TechStack />
       {/* Projects */}
-      <Projects />
+      <ProjectList />
       {/* Hire Me */}
       <HireMe />
     </div>
