@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Card = (props) => {
+export const Cardv1 = (props) => {
   return (
     <div className="flex-row flex-wrap items-center justify-center mr-2 h-28 md:h-40">
       <div className="bg-gray-800 rounded-lg w-36 md:w-56">
