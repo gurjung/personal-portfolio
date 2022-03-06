@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
+import { Card } from "../ui"
 export const Project = (props) => {
   return (
-    <div>
+    <Card size='large'>
       <img
         src={props.img}
-        className="object-cover w-full bg-nav h-36 lg:h-72"
+        className="object-cover rounded-lg bg-nav lg:h-48"
       />
-      <span>{props.title}</span>
-    </div>
+      <span className="mt-4">{props.title}</span>
+    </Card>
   );
 };
