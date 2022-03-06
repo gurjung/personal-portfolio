@@ -27,7 +27,7 @@ export const HireMe = () => {
       );
   };
   return (
-    <div className="container flex items-center justify-between w-full px-8 mx-auto mt-20 md:mt-48 md:px-14 lg:px-24">
+    <div className="container flex items-center justify-between w-full px-8 mx-auto mt-20 shadow-2xl md:mt-48 md:px-14 lg:px-24">
       <section className="w-full">
         <h2 id="hire" className="secondary-title">
           Hire me
