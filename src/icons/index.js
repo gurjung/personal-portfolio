@@ -10,7 +10,11 @@ export {
   SiChartdotjs,
   SiTailwindcss,
 } from "react-icons/si";
-export { IoLogoJavascript} from "react-icons/io";
-export { AiOutlineAntDesign } from "react-icons/ai";
+export { IoLogoJavascript } from "react-icons/io";
+export {
+  AiOutlineAntDesign,
+  AiFillGithub,
+  AiFillLinkedin,
+} from "react-icons/ai";
 export { FaSass } from "react-icons/fa";
 export { DiReact } from "react-icons/di";
