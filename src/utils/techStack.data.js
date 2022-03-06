@@ -1,8 +1,16 @@
-import { ImHtmlFive2 } from "react-icons/im";
-import { SiCss3 } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
-// import { SiCss3 } from "react-icons/si";
-// import { SiCss3 } from "react-icons/si";
+import {
+  ImHtmlFive2,
+  IoLogoJavascript,
+  SiCss3,
+  DiReact,
+  SiRedux,
+  SiMaterialui,
+  AiOutlineAntDesign,
+  FaSass,
+  SiLeaflet,
+  SiChartdotjs,
+  SiTailwindcss,
+} from "../icons";
 
 export const TECH_STACK_DATA = [
   {
@@ -14,35 +22,39 @@ export const TECH_STACK_DATA = [
     logo: <SiCss3 />,
   },
   {
-    title: "JS",
+    title: "Javascript",
     logo: <IoLogoJavascript />,
   },
   {
     title: "React",
-    logo: <ImHtmlFive2 />,
+    logo: <DiReact />,
+  },
+  {
+    title: "Redux",
+    logo: <SiRedux />,
   },
   {
     title: "Material UI",
-    logo: <ImHtmlFive2 />,
+    logo: <SiMaterialui />,
   },
   {
     title: "Ant Design",
-    logo: <ImHtmlFive2 />,
+    logo: <AiOutlineAntDesign />,
   },
   {
     title: "Tailwind CSS",
-    logo: <ImHtmlFive2 />,
+    logo: <SiTailwindcss />,
   },
   {
-    title: "SCSS",
-    logo: <ImHtmlFive2 />,
+    title: "SASS",
+    logo: <FaSass />,
   },
   {
     title: "React Leaflet",
-    logo: <ImHtmlFive2 />,
+    logo: <SiLeaflet />,
   },
   {
     title: "Chart.js",
-    logo: <ImHtmlFive2 />,
+    logo: <SiChartdotjs />,
   },
 ];
