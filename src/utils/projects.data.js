@@ -1,10 +1,11 @@
+import { TEXTS } from "../constants";
 export const PROJECTS_DATA = [
   {
-    title: "Notes",
+    title: TEXTS.PROJECTS.ONE,
     img: "images/notes-app.png",
   },
   {
-    title: "Covid19 Tracker",
+    title: TEXTS.PROJECTS.TWO,
     img: "images/covid19-tracker.png",
   },
 ];

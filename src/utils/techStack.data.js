@@ -11,50 +11,51 @@ import {
   SiChartdotjs,
   SiTailwindcss,
 } from "../icons";
+import { TEXTS } from "../constants";
 
 export const TECH_STACK_DATA = [
   {
-    title: "HTML",
+    title: TEXTS.TECH.HTML,
     logo: <ImHtmlFive2 />,
   },
   {
-    title: "CSS",
+    title: TEXTS.TECH.CSS,
     logo: <SiCss3 />,
   },
   {
-    title: "Javascript",
+    title: TEXTS.TECH.JS,
     logo: <IoLogoJavascript />,
   },
   {
-    title: "React",
+    title: TEXTS.TECH.REACT,
     logo: <DiReact />,
   },
   {
-    title: "Redux",
+    title: TEXTS.TECH.REDUX,
     logo: <SiRedux />,
   },
   {
-    title: "Material UI",
+    title: TEXTS.TECH.MUI,
     logo: <SiMaterialui />,
   },
   {
-    title: "Ant Design",
+    title: TEXTS.TECH.ANT_DESIGN,
     logo: <AiOutlineAntDesign />,
   },
   {
-    title: "Tailwind CSS",
+    title: TEXTS.TECH.TAILWIND_CSS,
     logo: <SiTailwindcss />,
   },
   {
-    title: "SASS",
+    title: TEXTS.TECH.SASS,
     logo: <FaSass />,
   },
   {
-    title: "React Leaflet",
+    title: TEXTS.TECH.LEAFLET,
     logo: <SiLeaflet />,
   },
   {
-    title: "Chart.js",
+    title: TEXTS.TECH.CHART_JS,
     logo: <SiChartdotjs />,
   },
 ];

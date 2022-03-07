@@ -2,7 +2,7 @@ import React from "react";
 import { classNames } from "../utils";
 export const Card = ({ size, children }) => {
   return (
-    <div className="flex-row flex-wrap items-center justify-center h-28 md:h-40">
+    <div className="flex-row flex-wrap items-center justify-center h-28 md:h-40 card">
       <div
         className={classNames(
           size === "large" ? "w-48 md:w-64 lg:w-96" : "w-36",

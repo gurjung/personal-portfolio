@@ -2,6 +2,8 @@ export const TEXTS = {
   NAME: "Gurjung.Singh",
   INTRO_DESC1: "Hey, I'm Frontend Developer",
   INTRO_DESC2: "Building beautiful web experiences",
+  WORK: "My Recent Work",
+  TECHSTACK: "Tech I Use",
   URIS: {
     HOME: "HOME",
     TECH: "Tech I Use",
@@ -25,7 +27,15 @@ export const TEXTS = {
   },
   PROJECTS: {
     ONE: "Notes",
-    SECOND: "Covid19 Tracker",
+    TWO: "Covid19 Tracker",
   },
-  FOOTER_HEADING: "Let's keep in touch and work together",
+  FORM: {
+    NAME: "Name",
+    EMAIL: "Email",
+    SUBMIT: "Send It!",
+    SUBJECT: "Subject",
+    MESSAGE: "Message",
+    CONFIRMATION: "Thank you contacting me...",
+  },
+  FOOTER_DESC: "Let's keep in touch and work together",
 };
