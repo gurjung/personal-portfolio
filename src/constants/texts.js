@@ -1,0 +1,31 @@
+export const TEXTS = {
+  NAME: "Gurjung.Singh",
+  INTRO_DESC1: "Hey, I'm Frontend Developer",
+  INTRO_DESC2: "Building beautiful web experiences",
+  URIS: {
+    HOME: "HOME",
+    TECH: "Tech I Use",
+    PROJECTS: "My Work",
+    CONTACT: "Hire Me",
+  },
+  VIEW_WORK: "View my work",
+  VIEW_CV: "My CV",
+  TECH: {
+    HTML: "HTML",
+    CSS: "CSS",
+    JS: "Javascript",
+    REACT: "React",
+    REDUX: "Redux",
+    MUI: "Material UI",
+    ANT_DESIGN: "Ant Design",
+    SASS: "SASS",
+    TAILWIND_CSS: "Tailwind CSS",
+    CHART_JS: "Chart.js",
+    LEAFLET: "React Leaflet",
+  },
+  PROJECTS: {
+    ONE: "Notes",
+    SECOND: "Covid19 Tracker",
+  },
+  FOOTER_HEADING: "Let's keep in touch and work together",
+};
