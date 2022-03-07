@@ -14,3 +14,12 @@ body {
 body {
   @apply pb-12 text-white bg-body font-poppins;
 }
+
+.card{
+  cursor: pointer;
+  transition: all ease 200ms; 
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
