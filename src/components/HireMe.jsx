@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { AiFillLinkedin, AiFillGithub } from "../icons";
-
+import { TEXTS } from "../constants";
 export const HireMe = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false);
@@ -17,7 +17,7 @@ export const HireMe = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           setDone(true);
         },
         (error) => {
@@ -27,74 +27,68 @@ export const HireMe = () => {
       );
   };
   return (
-    <div className="container flex items-center justify-between w-full px-8 mx-auto mt-20 shadow-2xl md:mt-48 md:px-14 lg:px-24">
-      <section className="w-full">
-        <h2 id="hire" className="secondary-title">
-          Hire me
-        </h2>
-        <p className="section-paragraph">
-          Feel free to contact me any time, through any method below.
-        </p>
-
-        <div className="grid w-full gap-8 mt-24 lg:grid-cols-2 lg:gap-32">
-          <div className="space-y-12">
-            <form ref={formRef} onSubmit={handleSubmit}>
-              <label className="block mb-2 text-xl font-bold text-white">
-                Name
-              </label>
-              <input
-                type="text"
-                name="user_name"
-                className="w-full px-4 py-4 border border-input-border bg-input"
-              />
-              <label className="block mb-2 text-xl font-bold text-white">
-                Subject
-              </label>
-              <input
-                type="text"
-                name="user_subject"
-                className="w-full px-4 py-4 border border-input-border bg-input"
-              />
-              <label className="block mb-2 text-xl font-bold text-white">
-                Email
-              </label>
-              <input
-                type="email"
-                name="user_email"
-                className="w-full px-4 py-4 border border-input-border bg-input"
-              />
-              <label className="block mb-2 text-xl font-bold text-white">
-                Message
-              </label>
-              <textarea
-                type="text"
-                name="message"
-                className="w-full h-56 px-4 py-4 border resize-none border-input-border bg-input"
-              ></textarea>
-              <button className="px-6 py-2 mb-2 font-bold text-white bg-theme">
-                Send it!
-              </button>
-            </form>
-            {done && <span>"Thank you contacting me..."</span>}
-          </div>
-
-          <div className="mt-12">
-            <p className="text-secondary">12345678</p>
-            <a href="#/" className="block mt-3 underline text-secondary">
-              email@mydomain.com
-            </a>
-
-            <div className="flex mt-20 space-x-6">
-              <a href="#/">
-                <AiFillGithub />
-              </a>
-              <a href="#/">
-                <AiFillLinkedin />
-              </a>
-            </div>
-          </div>
+    <footer className="container flex flex-col items-center justify-between w-full px-8 mx-auto mt-20 shadow-2xl md:flex-row md:mt-48 md:px-14 lg:px-24">
+      <section>
+        <p id="hire">{TEXTS.FOOTER_DESC}</p>
+        <div className="flex items-center justify-center px-5 mt-8">
+          <a href="https://github.com/gurjung" className="px-5">
+            <AiFillGithub size={60} />
+          </a>
+          <a href="#/">
+            <AiFillLinkedin size={60} />
+          </a>
         </div>
       </section>
-    </div>
+      <div className="flex flex-col md:flex-row">
+        <div className="space-y-12">
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <label className="block my-2 text-xl font-bold text-white">
+              {TEXTS.FORM.NAME}
+            </label>
+            <input
+              type="text"
+              name="user_name"
+              className="w-full px-4 py-4 border rounded-lg border-input-border bg-input"
+            />
+            <label className="block my-2 text-xl font-bold text-white">
+              {TEXTS.FORM.SUBJECT}
+            </label>
+            <input
+              type="text"
+              name="user_subject"
+              className="w-full px-4 py-4 border rounded-lg border-input-border bg-input"
+            />
+            <label className="block my-2 text-xl font-bold text-white">
+              {TEXTS.FORM.EMAIL}
+            </label>
+            <input
+              type="email"
+              name="user_email"
+              className="w-full px-4 py-4 border rounded-lg border-input-border bg-input"
+            />
+            <label className="block my-2 text-xl font-bold text-white">
+              {TEXTS.FORM.MESSAGE}
+            </label>
+            <textarea
+              type="text"
+              name="message"
+              className="w-full h-56 px-4 py-4 border rounded-lg resize-none border-input-border bg-input"
+            ></textarea>
+            <button className="px-6 py-2 my-2 font-bold text-white rounded-lg bg-theme">
+              {TEXTS.FORM.SUBMIT}
+            </button>
+          </form>
+          {done && <span>{TEXTS.FORM.CONFIRMATION}</span>}
+        </div>
+        {/* <div className="flex items-center justify-center px-5 mb-5 mt-15">
+            <a href="https://github.com/gurjung" className="px-5">
+              <AiFillGithub />
+            </a>
+            <a href="#/">
+              <AiFillLinkedin />
+            </a>
+          </div> */}
+      </div>
+    </footer>
   );
 };
