@@ -18,13 +18,20 @@ export const Intro = () => {
             <div>
               <ViewIcon />
             </div>
-            <a href="#projects" className="text-2xl">{TEXTS.VIEW_WORK}</a>
+            <a href="#projects" className="text-2xl">
+              {TEXTS.VIEW_WORK}
+            </a>
           </button>
           <button className="flex items-center px-8 py-4 mx-4 mt-4 space-x-3 font-bold text-white rounded-lg md:mt-12 bg-theme">
             <div>
               <ViewIcon />
             </div>
-            <a href="#hire" className="text-2xl">{TEXTS.VIEW_CV}</a>
+            <a
+              href="https://drive.google.com/file/d/1zXKro_OJ-aJlHGUQBf-FwKwQmew1WO_N/view?usp=sharing"
+              className="text-2xl"
+            >
+              {TEXTS.VIEW_CV}
+            </a>
           </button>
         </div>
       </div>
