@@ -34,7 +34,7 @@ export const HireMe = () => {
           <a href="https://github.com/gurjung" className="px-5">
             <AiFillGithub size={60} />
           </a>
-          <a href="#/">
+          <a href="https://www.linkedin.com/in/gurjung-singh-945731219">
             <AiFillLinkedin size={60} />
           </a>
         </div>
@@ -80,14 +80,6 @@ export const HireMe = () => {
           </form>
           {done && <span>{TEXTS.FORM.CONFIRMATION}</span>}
         </div>
-        {/* <div className="flex items-center justify-center px-5 mb-5 mt-15">
-            <a href="https://github.com/gurjung" className="px-5">
-              <AiFillGithub />
-            </a>
-            <a href="#/">
-              <AiFillLinkedin />
-            </a>
-          </div> */}
       </div>
     </footer>
   );
