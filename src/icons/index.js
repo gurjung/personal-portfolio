@@ -18,3 +18,4 @@ export {
 } from "react-icons/ai";
 export { FaSass } from "react-icons/fa";
 export { DiReact } from "react-icons/di";
+export { CgClose } from "react-icons/cg";

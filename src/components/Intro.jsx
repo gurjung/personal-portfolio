@@ -13,18 +13,18 @@ export const Intro = () => {
           loop
           className="text-5xl font-bold text-center text-white md:text-6xl lg:text-7xl md:text-left bg-body"
         ></Typed>
-        <div className="flex flex-col items-center justify-center w-full md:flex-row">
+        <div className="flex flex-col items-center justify-center w-full mt-4 md:flex-row md:mt-0">
           <button className="flex items-center px-8 py-4 mx-4 space-x-3 font-bold text-white rounded-lg md:mt-12 bg-theme">
             <div>
               <ViewIcon />
             </div>
-            <a href="#projects">{TEXTS.VIEW_WORK}</a>
+            <a href="#projects" className="text-2xl">{TEXTS.VIEW_WORK}</a>
           </button>
           <button className="flex items-center px-8 py-4 mx-4 mt-4 space-x-3 font-bold text-white rounded-lg md:mt-12 bg-theme">
             <div>
               <ViewIcon />
             </div>
-            <a href="#hire">{TEXTS.VIEW_CV}</a>
+            <a href="#hire" className="text-2xl">{TEXTS.VIEW_CV}</a>
           </button>
         </div>
       </div>
