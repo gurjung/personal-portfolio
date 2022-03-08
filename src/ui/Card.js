@@ -3,7 +3,7 @@ import { classNames } from "../utils";
 export const Card = ({ size, children, classNameProp = "" }) => {
   return (
     <div
-      className={`flex-row flex-wrap items-center justify-center h-28 md:h-40 card ${classNameProp}`}
+      className={`flex-row flex-wrap items-center justify-center rounded-lg h-28 md:h-40 card ${classNameProp}`}
     >
       <div
         className={classNames(
