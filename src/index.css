@@ -15,11 +15,15 @@ body {
   @apply pb-12 text-white bg-body font-poppins;
 }
 
-.card{
+.card {
   cursor: pointer;
-  transition: all ease 200ms; 
+  transition: all ease 200ms;
 }
 
 .card:hover {
   transform: scale(1.03);
+}
+
+.project-card {
+  @apply mt-12 md:mt-6 md:mx-2;
 }

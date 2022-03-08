@@ -7,10 +7,7 @@ export const Intro = () => {
     <>
       <div className="flex flex-wrap justify-center mx-auto mt-8 align-center lg:ml-20 md:my-20">
         <Typed
-          strings={[
-            TEXTS.INTRO_DESC1,
-            TEXTS.INTRO_DESC2,
-          ]}
+          strings={[TEXTS.INTRO_DESC1, TEXTS.INTRO_DESC2]}
           typeSpeed={100}
           backSpeed={100}
           loop

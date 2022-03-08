@@ -5,7 +5,7 @@ export const TEXTS = {
   WORK: "My Recent Work",
   TECHSTACK: "Tech I Use",
   URIS: {
-    HOME: "HOME",
+    HOME: "Home",
     TECH: "Tech I Use",
     PROJECTS: "My Work",
     CONTACT: "Hire Me",
@@ -13,8 +13,8 @@ export const TEXTS = {
   VIEW_WORK: "View my work",
   VIEW_CV: "My CV",
   TECH: {
-    HTML: "HTML",
-    CSS: "CSS",
+    HTML: "HTML5",
+    CSS: "CSS3",
     JS: "Javascript",
     REACT: "React",
     REDUX: "Redux",
