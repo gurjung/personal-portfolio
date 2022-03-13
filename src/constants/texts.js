@@ -26,8 +26,9 @@ export const TEXTS = {
     LEAFLET: "React Leaflet",
   },
   PROJECTS: {
-    ONE: "Notes",
-    TWO: "Covid19 Tracker",
+    NOTES_APP: "Notes",
+    COVID_APP: "Covid19 Tracker",
+    CRYPTO_APP: "Cryptocurrency Tracker",
   },
   FORM: {
     NAME: "Name",
